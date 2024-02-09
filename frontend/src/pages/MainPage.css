@@ -1,0 +1,32 @@
+.main {
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.greetings {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: navy;
+  text-align: center;
+  overflow: hidden;
+}
+
+.center-box {
+  margin: 0 auto;
+}
+
+.center-box>p,
+.center-box>h1 {
+  margin: 6px 0;
+}

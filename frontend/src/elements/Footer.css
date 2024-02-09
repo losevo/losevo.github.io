@@ -1,0 +1,35 @@
+.footer {
+    width: 100vw;
+    display: flex;
+    background-color: burlywood;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer>*:first-child {
+    padding-top: 20px;
+    margin: 0;
+}
+
+.footer>p {
+    margin: 6px 0;
+}
+
+.footer>p:last-child {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.name {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: navy;
+}
+
+svg {
+    width: 24px;
+    
+}
