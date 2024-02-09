@@ -4,7 +4,7 @@
         "predeploy": "npm run build frontend",
         "deploy": "gh-pages -d build frontend"
     },
-    "homepage": "https://losevo.github.io",
+    "homepage": "https://losevo.github.i/frontend",
     "devDependencies": {
         "gh-pages": "^6.1.1"
     }
