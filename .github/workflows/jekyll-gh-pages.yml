@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          npm run build frontend
+          npm run build
           npm start
       - name: Checkout
         uses: actions/checkout@v4
