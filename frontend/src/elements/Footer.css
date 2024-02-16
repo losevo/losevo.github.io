@@ -1,5 +1,4 @@
 .footer {
-    width: 100vw;
     display: flex;
     background-color: burlywood;
     min-height: 50px;
@@ -24,7 +23,6 @@
 
 .name {
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: navy;
 }

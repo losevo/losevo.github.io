@@ -21,11 +21,14 @@
 a {
     text-decoration: none;
     font-size: 18px;
-    font-family:'Courier New', Courier, monospace;
     color: navy;
     font-weight: bold;
 }
 
 a:hover {
     color:brown;
+}
+
+li {
+    font-size: 2vh;
 }

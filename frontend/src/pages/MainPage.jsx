@@ -1,12 +1,30 @@
-import './MainPage.css';
-import NavBar from '../elements/NavBar';
-import Footer from '../elements/Footer';
+import "./MainPage.css";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
+  const basicSkills = [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "React",
+    "git",
+    "npm",
+    "Webpack",
+    "axios",
+  ];
+  const additionalSkills = [
+    "Redux-toolkit",
+    "React Router",
+    "Jest",
+    "Formik",
+    "yup",
+    "i18",
+    "WebSockets",
+  ];
+
   return (
     <div>
-      <NavBar />
-      <div className='main'>
+      <div className="main">
         <div className="greetings">
           <div className="center-box">
             <h1 className="center-h">Привет! </h1>
@@ -15,10 +33,43 @@ const MainPage = () => {
             <p>И это мой сайт-визитка:)</p>
           </div>
         </div>
+        <div className="skills-page">
+          <div className="center-box">
+            <h1>О себе</h1>
+          </div>
+          <div className="part-skills-and-about">
+            <div className="about">
+              <span>
+                Умею думать алгоритмами и <Link to={"https://www.codewars.com/users/losevo"}>решаю каты 6-8 kyu</Link>, могу писать ООП. 
+              </span>
+              {' '}
+              <span>
+                Изучаю профильную литературу, tg и YT-каналы, а также профильные журналы, статьи на Хабре и блоги на сайтах крупных компаний.
+              </span>
+              <p>
+                <span>Работал три года тренинг-менеджером. Вводил людей в компанию</span>
+              </p>
+            </div>
+            <div className="skills">
+            <h3> ЗНАЮ</h3>
+            <div className="basic-skills">
+              {basicSkills.map((skill) => (
+                <span className="basic-skill">{skill}</span>
+              ))}
+            </div>
+            <h3>ИСПОЛЬЗУЮ</h3>
+            <div className="additional-skills">
+              {additionalSkills.map((skill) => (
+                <span className="additional-skill">{skill}</span>
+              ))}
+            </div>
+          </div>
+          </div>
+          
+        </div>
       </div>
-      <Footer />
     </div>
   );
-}
+};
 
 export default MainPage;
