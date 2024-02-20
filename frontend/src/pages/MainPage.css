@@ -21,7 +21,7 @@ p {
 }
 
 .greetings, .skills-page {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -31,7 +31,7 @@ p {
 }
 
 .projects {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   color: navy;
   overflow: hidden;
