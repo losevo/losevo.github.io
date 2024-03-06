@@ -13,7 +13,7 @@ const projects = [
         technologies: ['React', 'HTML', 'CSS', 'Webpack', 'React Hook Form', 'yup', 'i18next'],
         links: {
             linkToGithub: "https://github.com/losevo/frontend-project-11",
-            linkToProject: "/RSS"
+            linkToProject: "rss"
         }
     },
     {

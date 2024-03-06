@@ -1,0 +1,50 @@
+.rss-form-page {
+    color: navy;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.rss-form-page h2 {
+    font-size: 4vh;
+}
+
+.input-for-rss {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 2.1vh;
+    border: 0.5px navy solid;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.rss-form input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: 2.5vh;
+    color: navy;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.error-rss {
+    color: darkred;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    padding-left: 10px;
+    margin: 4px 0;
+}

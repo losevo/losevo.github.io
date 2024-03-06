@@ -1,12 +1,11 @@
-import projects from '../data/projects.js';
+import projects from '../features/projects.js';
 import { Link } from 'react-router-dom';
 
-// todo #2 Добавить ссылку на гитхаб в описание в зависимости от её наличия
 // todo #3 Сделать карточки проектов горизонтальными без ограничения экрана по высоте
 
 const Project = (props) => {
-    console.log(props, props.project.name);
-    const { name, description, technologies, links } = props.project; 
+    const { name, description, technologies, links } = props.project;
+    const wordForLink = 'GitHub';
 
     return (
         <div className='project'>
@@ -14,7 +13,9 @@ const Project = (props) => {
                 <h3>{name}</h3>
             </div>
             <div className='about-project'>
-                {description.map((paragraph) => <p>{paragraph}</p>)}
+                {description.map((paragraph) => 
+                <p>{paragraph.split(' ').map((word) => 
+                word.slice(0, -1) === wordForLink ? <Link to={links.linkToGithub}>{wordForLink}.</Link> : `${word} `)}</p>)}
             </div>
             <div className="projects-tech">
                 {technologies.map((tech) => <span>{tech}</span>)}

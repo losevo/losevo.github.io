@@ -1,0 +1,59 @@
+.result-rss > div {
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-list {
+    padding: 8px 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+}
+
+.one-new {
+    margin: 8px 4px;
+    padding: 8px 4px;
+    width: 40vw;
+    border-bottom: 1px navy solid;
+}
+
+.one-new:last-child {
+    border: none;
+}
+
+.channels-list {
+    min-height: 25vh;
+    border-left: 1px navy solid;
+    margin: 8px 4px;
+    padding: 8px 4px;
+}
+
+.channels-list ul {
+    padding: 0;
+}
+
+.channels-list li {
+    list-style-type: none;
+}
+
+.one-new a:visited {
+    color: brown;
+}
+
+.channel {
+    width: 100%;
+    text-align: start;
+    padding: 8px 4px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: navy;
+    cursor: pointer;
+}
+
+.channel h3 {
+    margin: 4px 0 0 0;
+}
