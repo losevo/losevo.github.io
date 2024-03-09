@@ -1,3 +1,5 @@
+import './Greeting.css';
+
 const Greeting = () => {
     return (
         <div className="greetings">

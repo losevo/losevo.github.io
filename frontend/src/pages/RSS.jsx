@@ -16,6 +16,8 @@ import "./RSS.css";
 import formRssList from '../features/formRssList.js';
 import RSSResult from '../elements/RSS/RSSResult.jsx';
 
+// todo #10 Добавить дизэйбл для формы в момент получения данных
+
 const RSS = () => {
   const schema = yup
     .object({
@@ -40,15 +42,13 @@ const RSS = () => {
     axios.get(`https://allorigins.hexlet.app/get?disableCache=true&url=${encodeURIComponent(data.url)}`)
     .then((response) => {
         if( response.status === 200) return response.data;
-        dispatch(catchError('errorNetwork'));
-        return;
+        return dispatch(catchError('errorNetwork'));
     })
     .then((data) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(data.contents, 'application/xhtml+xml')
         if (doc.querySelector('parsererror')) {
-            dispatch(catchError('notContainRSS'));
-            return;
+            return dispatch(catchError('notContainRSS'));
         } else {
             dispatch(addToUrlList(data.status.url));
             dispatch(catchError(''));
@@ -70,8 +70,6 @@ const RSS = () => {
         dispatch(catchError('errorValidURL'))
     }
   }, [errors])
-
-  console.log(curState);
 
   return (
     <div className="rss-form-page">

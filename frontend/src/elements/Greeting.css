@@ -1,0 +1,23 @@
+.greetings>.center-box>p {
+    padding: 7px;
+}
+
+.greetings,
+.skills-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: navy;
+    text-align: center;
+    overflow: hidden;
+}
+
+.center-box {
+    margin: 0 auto;
+}
+
+.center-box>p,
+.center-box>h1 {
+    margin: 6px 0;
+}

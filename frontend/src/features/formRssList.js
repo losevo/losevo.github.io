@@ -5,7 +5,6 @@ const formRssList = (doc) => {
         items: [],
 };
 
-console.log(doc);
     objectNewRss.title = doc.querySelector('title').innerHTML;
     objectNewRss.description = doc.querySelector('description').innerHTML;
     const listOfItems = doc.querySelectorAll('item');
@@ -13,6 +12,7 @@ console.log(doc);
         const newItem = {
             title: `${item.querySelector('title').innerHTML}`,
             link: `${item.querySelector('link').innerHTML}`,
+            channel: `${objectNewRss.title}`,
         }
         objectNewRss.items.push(newItem);
     });

@@ -1,3 +1,4 @@
+import './Projects.css';
 import projects from '../features/projects.js';
 import { Link } from 'react-router-dom';
 
@@ -13,12 +14,12 @@ const Project = (props) => {
                 <h3>{name}</h3>
             </div>
             <div className='about-project'>
-                {description.map((paragraph) => 
-                <p>{paragraph.split(' ').map((word) => 
-                word.slice(0, -1) === wordForLink ? <Link to={links.linkToGithub}>{wordForLink}.</Link> : `${word} `)}</p>)}
+                {description.map((paragraph, index) => 
+                <p key={index}>{paragraph.split(' ').map((word) => 
+                word.slice(0, -1) === wordForLink ? <Link to={links.linkToGithub} key={index}>{wordForLink}.</Link> : `${word} `)}</p>)}
             </div>
             <div className="projects-tech">
-                {technologies.map((tech) => <span>{tech}</span>)}
+                {technologies.map((tech, index) => <span key={index}>{tech}</span>)}
             </div>
             <div className="link-to-project">
                 <Link to={links.linkToProject}>К проекту {"->"} </Link>
@@ -41,7 +42,7 @@ const Projects = () => {
             </span>
           </div>
           <div className='list-of-projects'>
-            {projects.map((project) => <Project project={project}/>)}
+            {projects.map((project, index) => <Project project={project} key={index}/>)}
         </div>
         </div>
         

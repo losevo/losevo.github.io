@@ -1,0 +1,49 @@
+.skills-page {
+    background-color: bisque;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skills-page>.center-box {
+    margin-top: 10%;
+}
+
+.skills {
+    width: 25vw;
+}
+
+.skills>h3 {
+    margin-top: 0;
+}
+
+.part-skills-and-about {
+    display: flex;
+    text-align: start;
+}
+
+.about {
+    width: 40vw;
+    font-size: 2vh;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.about a,
+.about p {
+    font-size: 2vh;
+}
+
+.basic-skills>span,
+.additional-skills>span {
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 0 4px 4px;
+    padding: 5px 15px;
+    font-size: 1.7vh;
+}
+
+.basic-skill,
+.additional-skill {
+    display: inline-block;
+    margin: 0 auto;
+}

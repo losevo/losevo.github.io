@@ -57,3 +57,9 @@
 .channel h3 {
     margin: 4px 0 0 0;
 }
+
+.tag-channel {
+    font-size: 1.5vh;
+    margin-top: 2px;
+    text-align: end;
+}
