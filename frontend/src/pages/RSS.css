@@ -29,6 +29,8 @@
 
 .rss-form input[type="submit"] {
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     box-sizing: border-box;
     background-color: blanchedalmond;
     border: none;

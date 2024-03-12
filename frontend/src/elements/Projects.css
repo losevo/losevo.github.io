@@ -32,6 +32,7 @@
 
 .list-of-projects {
     display: flex;
+    flex-direction: column;
     width: 75vw;
     margin: 0 auto;
     justify-content: space-around;
@@ -39,8 +40,9 @@
 
 .project {
     text-align: center;
-    width: 25vw;
+    width: 100%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .link-to-project {
@@ -76,4 +78,10 @@
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .smalltalks-about-projects {
+        width: 75vw;
+    }
 }

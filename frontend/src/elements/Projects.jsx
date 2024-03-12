@@ -2,8 +2,6 @@ import './Projects.css';
 import projects from '../features/projects.js';
 import { Link } from 'react-router-dom';
 
-// todo #3 Сделать карточки проектов горизонтальными без ограничения экрана по высоте
-
 const Project = (props) => {
     const { name, description, technologies, links } = props.project;
     const wordForLink = 'GitHub';
