@@ -1,0 +1,136 @@
+const teamsForRatings = [
+  {
+    name: "Jeeves",
+    region: "OC",
+    ratings: {
+      march11: 1281.08,
+      march4: 1276.02,
+      february26: 1300.08,
+      february19: 1249.47,
+      february12: 1198.07,
+    },
+    logo: "",
+  },
+  {
+    name: "Spirit",
+    region: "CIS",
+    ratings: {
+      march11: 1249.72,
+      march4: 1230.86,
+      february26: 1230.86,
+      february19: 1226.47,
+      february12: 1226.47,
+    },
+    logo: "",
+  },
+  {
+    name: "Virtus.Pro",
+    region: "CIS",
+    ratings: {
+      march11: 1246.39,
+      march4: 1246.39,
+      february26: 1246.39,
+      february19: 1246.39,
+      february12: 1227.01,
+    },
+    logo: "",
+  },
+  {
+    name: "FaZe",
+    region: "EU",
+    ratings: {
+      march11: 1245.47,
+      march4: 1245.47,
+      february26: 1245.47,
+      february19: 1245.47,
+      february12: 1241.42,
+    },
+    logo: "",
+  },
+  {
+    name: "TheMongolz",
+    region: "AS",
+    ratings: {
+      march11: 1222.38,
+      march4: 1222.38,
+      february26: 1196.57,
+      february19: 1196.57,
+      february12: 1196.57,
+    },
+    logo: "",
+  },
+  {
+    name: "Imperial",
+    region: "SA",
+    ratings: {
+      march11: 1222.35,
+      march4: 1236.09,
+      february26: 1213.44,
+      february19: 1220.57,
+      february12: 1183.66,
+    },
+    logo: "",
+  },
+  {
+    name: "M80",
+    region: "NA",
+    ratings: {
+      march11: 1189.77,
+      march4: 1203.7,
+      february26: 1199.92,
+      february19: 1199.92,
+      february12: 1199.92,
+    },
+    logo: "",
+  },
+  {
+    name: "Preasy",
+    region: "EU",
+    ratings: {
+      march11: 1175.3,
+      march4: 1157.11,
+      february26: 1168.51,
+      february19: 1201.82,
+      february12: 1201.82,
+    },
+    logo: "",
+  },
+  {
+    name: "Liquid",
+    region: "NA",
+    ratings: {
+      march11: 1169.14,
+      march4: 1209.38,
+      february26: 1166.88,
+      february19: 1157.35,
+      february12: 1157.35,
+    },
+    logo: "",
+  },
+  {
+    name: "SAW",
+    region: "EU",
+    ratings: {
+      march11: 1168.6,
+      march4: 1132.77,
+      february26: 1124.31,
+      february19: 1124.31,
+      february12: 1124.31,
+    },
+    logo: "",
+  },
+  {
+    name: "KOI",
+    region: "EU",
+    ratings: {
+      march11: 1165.64,
+      march4: null,
+      february26: 1137.15,
+      february19: 1137.15,
+      february12: null,
+    },
+    logo: "",
+  },
+];
+
+export default teamsForRatings;
