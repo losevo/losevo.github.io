@@ -10,6 +10,7 @@ const teamsForRatings = [
       february12: 1198.07,
     },
     logo: "jeeves.svg",
+    active: false,
   },
   {
     name: "Spirit",
@@ -22,6 +23,7 @@ const teamsForRatings = [
       february12: 1226.47,
     },
     logo: "spirit.png",
+    active: false,
   },
   {
     name: "Virtus.Pro",
@@ -34,6 +36,7 @@ const teamsForRatings = [
       february12: 1227.01,
     },
     logo: "virtuspro.svg",
+    active: false,
   },
   {
     name: "FaZe",
@@ -46,6 +49,7 @@ const teamsForRatings = [
       february12: 1241.42,
     },
     logo: "faze.png",
+    active: false,
   },
   {
     name: "TheMongolz",
@@ -58,6 +62,7 @@ const teamsForRatings = [
       february12: 1196.57,
     },
     logo: "themongolz.png",
+    active: false,
   },
   {
     name: "Imperial",
@@ -70,6 +75,7 @@ const teamsForRatings = [
       february12: 1183.66,
     },
     logo: "imperial.png",
+    active: false,
   },
   {
     name: "M80",
@@ -82,6 +88,7 @@ const teamsForRatings = [
       february12: 1199.92,
     },
     logo: "m80.png",
+    active: false,
   },
   {
     name: "Preasy",
@@ -94,6 +101,7 @@ const teamsForRatings = [
       february12: 1201.82,
     },
     logo: "preasy.png",
+    active: false,
   },
   {
     name: "Liquid",
@@ -106,6 +114,7 @@ const teamsForRatings = [
       february12: 1157.35,
     },
     logo: "liquid.svg",
+    active: false,
   },
   {
     name: "SAW",
@@ -118,6 +127,7 @@ const teamsForRatings = [
       february12: 1124.31,
     },
     logo: "saw.png",
+    active: false,
   },
   {
     name: "KOI",
@@ -130,6 +140,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "koi.png",
+    active: false,
   },
   {
     name: "MOUZ",
@@ -142,6 +153,7 @@ const teamsForRatings = [
       february12: 1128.06,
     },
     logo: "mouz.png",
+    active: false,
   },
   {
     name: "G2",
@@ -154,6 +166,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "g2.png",
+    active: false,
   },
   {
     name: "9z",
@@ -166,6 +179,7 @@ const teamsForRatings = [
       february12: 1105.54,
     },
     logo: "9z.png",
+    active: false,
   },
   {
     name: "Natus Vincere",
@@ -178,6 +192,7 @@ const teamsForRatings = [
       february12: 1115.28,
     },
     logo: "navi.svg",
+    active: false,
   },
   {
     name: "Apeks",
@@ -190,6 +205,7 @@ const teamsForRatings = [
       february12: 1140.61,
     },
     logo: "apeks.png",
+    active: false,
   },
   {
     name: "FORZE",
@@ -202,6 +218,7 @@ const teamsForRatings = [
       february12: 1105.96,
     },
     logo: "forze.png",
+    active: false,
   },
   {
     name: "Metizport",
@@ -214,6 +231,7 @@ const teamsForRatings = [
       february12: 1132.29,
     },
     logo: "metizport.png",
+    active: false,
   },
   {
     name: "NAVI Javelins",
@@ -226,6 +244,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "navi.svg",
+    active: false,
   },
   {
     name: "Vitality",
@@ -238,6 +257,7 @@ const teamsForRatings = [
       february12: 1102.71,
     },
     logo: "vitality.png",
+    active: false,
   },
   {
     name: "FURIA",
@@ -250,6 +270,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "furia.svg",
+    active: false,
   },
   {
     name: "ECSTATIC",
@@ -262,6 +283,7 @@ const teamsForRatings = [
       february12: 1126.64,
     },
     logo: "ecstatic.png",
+    active: false,
   },
   {
     name: "Fluxo",
@@ -274,6 +296,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "fluxo.png",
+    active: false,
   },
   {
     name: "Sharks",
@@ -286,6 +309,7 @@ const teamsForRatings = [
       february12: 1121.14,
     },
     logo: "sharks.png",
+    active: false,
   },
   {
     name: "adalYamigos",
@@ -298,6 +322,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "jeeves.svg",
+    active: false,
   },
   {
     name: "BLEED",
@@ -310,6 +335,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "bleed.png",
+    active: false,
   },
   {
     name: "Rooster",
@@ -322,6 +348,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "rooster.png",
+    active: false,
   },
   {
     name: "BESTIA",
@@ -334,6 +361,7 @@ const teamsForRatings = [
       february12: 1117.93,
     },
     logo: "bestia.png",
+    active: false,
   },
   {
     name: "Nemiga",
@@ -346,6 +374,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "nemiga.png",
+    active: false,
   },
   {
     name: "VexX",
@@ -358,6 +387,7 @@ const teamsForRatings = [
       february12: null,
     },
     logo: "vexx.png",
+    active: false,
   },
 ];
 

@@ -28,8 +28,6 @@
     font-weight: bold;
 }
 
-
-
 .table-body {
     flex-direction: column;
 }
@@ -53,12 +51,17 @@
 
 .another-weeks-flex {
     display:flex;
+    min-height: 64px;
     flex-direction: row;
     gap: 20px;
-    padding: 5px 0;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px navy solid;
+}
+
+.another-weeks-none {
+    display: none;
+
 }
 
 .another-weeks-flex > div {
@@ -70,7 +73,7 @@
     font-weight: bold;
 }
 
-.team:hover {
+.current-week:hover {
     background-color:bisque;
 }
 

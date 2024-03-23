@@ -1,22 +1,32 @@
-import teamsForRatings from "../../features/teamsForRating";
-
+import * as cn from 'classnames';
+import { changeActivePreviousWeeks } from "../../features/slices/ratingSlices";
+import { useDispatch, useSelector } from 'react-redux';
 //todo #22 Добавить фильтр по дате
 //todo #23 Добавить фильтр по региону
-//todo #24 Сделать another-weeks раскрывающимся по нажатию
+//todo #25 Добавить анимацию раскрывания дополнительных данных
 
 const Teams = () => {
-  const sortOfTeam = teamsForRatings.sort(
-    (team1, team2) => team2.ratings.march11 - team1.ratings.march11
-  );
+    const teams = useSelector((state) => state.rating.ratings);
+    const dispatch = useDispatch();
 
+  //const sortOfTeam = teams.sort(
+   // (team1, team2) => team2.ratings.march4 - team1.ratings.march4);
+
+   
   return (
     <div className="table-body">
-      {sortOfTeam.map((team, index) => {
+      {teams.map((team, index) => {
+
         const pathToLogo = process.env.PUBLIC_URL + "/logos/" + team.logo;
 
+        const teamClass = cn({
+            'another-weeks-flex': team.active,
+            'another-weeks-none': !team.active,
+        })
+
         return (
-          <div className="team" key={index}>
-            <div className="current-week">
+          <div className="team" key={index} >
+            <div className="current-week" onClick={() => dispatch(changeActivePreviousWeeks(team))}>
               <div className="position">{index + 1}</div>
               <div className="teamname">
                 <div>
@@ -29,7 +39,7 @@ const Teams = () => {
                 {Math.floor(team.ratings.march11)}
               </div>
             </div>
-            <div className="another-weeks-flex">
+            <div className={teamClass}>
                 <div>
                     <div className="rating-date">February 12</div>
                     <div className="rating-date-value">{Math.floor(team.ratings.february12) !== 0 ? Math.floor(team.ratings.february12) : "Вне топ-30" }</div>

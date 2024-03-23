@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Contacts = () => {
   return (
     <div className="contacts">
-      <div className="finally-words">Буду рад вашей обратной связи по проектам или сообщению с приглашением на собеседование)</div>
+      <div className="finally-words">Буду рад вашей обратной связи по проектам.</div>
       <div className="contact-links">
         <Link to="https://t.me/davarenya">
           <svg
