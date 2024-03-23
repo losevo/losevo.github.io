@@ -21,7 +21,7 @@
 
 a {
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 18px;
     color: navy;
     font-weight: bold;
     list-style: none;
@@ -38,6 +38,3 @@ a:hover {
     background-size: 100% 2px;
 }
 
-li {
-    font-size: 2vh;
-}

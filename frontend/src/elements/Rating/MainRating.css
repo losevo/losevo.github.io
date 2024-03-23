@@ -1,0 +1,100 @@
+.rating {
+    background-color: antiquewhite;
+    min-height: 100vh;
+    padding: 20px;
+    color: navy;
+}
+
+.rating img {
+    width: 48px;
+}
+
+.table {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.table-head, .table-body {
+    display: flex;
+    width: 100%;
+}
+
+.table-head {
+    flex-direction: row;
+    gap: 25px;
+    border-bottom: 1px navy solid;
+    font-weight: bold;
+}
+
+
+
+.table-body {
+    flex-direction: column;
+}
+
+.current-week {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px 0;
+    align-items: center;
+    border-bottom: 1px navy solid;
+}
+
+.current-week .team-rating {
+    margin-left: 5px;
+}
+
+.current-week .team-region {
+    margin-left: 10px;
+}
+
+.another-weeks-flex {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px navy solid;
+}
+
+.another-weeks-flex > div {
+    text-align: center;
+}
+
+.rating-date {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.team:hover {
+    background-color:bisque;
+}
+
+.teamname div {
+    margin: 0 5px;
+}
+
+.position {
+    width: 30px;
+}
+
+.teamname {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-region {
+    width: 10%;
+    text-align: center;
+}
+
+.team-rating {
+    width: 10%;
+    text-align: center;
+}

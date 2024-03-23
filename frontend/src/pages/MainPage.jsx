@@ -2,6 +2,7 @@ import "./MainPage.css";
 import Projects from "../elements/Projects";
 import Greeting from "../elements/Greeting";
 import AboutMe from "../elements/AboutMe";
+import Contacts from "../elements/Contats";
 
 // todo #6 Добавить модальные окна с комментариями к некоторым страницам
 // todo #7 Добавить страницу с прочитанными книгами
@@ -21,6 +22,7 @@ const MainPage = () => {
         <Greeting />
         <AboutMe />
         <Projects />
+        <Contacts />
       </div>
     </div>
   );

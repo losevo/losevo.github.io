@@ -10,7 +10,7 @@ const projects = [
             перенесён на React. Его изначальную реализацию можно
             посмотреть на GitHub.`
         ],
-        technologies: ['React', 'HTML', 'CSS', 'Webpack', 'React Hook Form', 'yup', 'i18next'],
+        technologies: ['React', 'HTML', 'CSS', 'React Hook Form', 'yup', 'i18next'],
         links: {
             linkToGithub: "https://github.com/losevo/frontend-project-11",
             linkToProject: "rss"
@@ -22,10 +22,10 @@ const projects = [
             `Верстка рейтинга по CS2 основе Elo.`,
             `Мне было интересно это сделать, и я это сделал.`
         ],
-        technologies: ['React', 'HTML', 'CSS', 'Webpack', 'React Hook Form', 'yup', 'i18next'],
+        technologies: ['React', 'HTML', 'CSS'],
         links: {
             linkToGithub: null,
-            linkToProject: ""
+            linkToProject: "rating"
         }
     }
 ];
