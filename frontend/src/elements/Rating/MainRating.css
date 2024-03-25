@@ -101,3 +101,18 @@
     width: 10%;
     text-align: center;
 }
+
+.left-arrow, .right-arrow {
+    background-color: burlywood;
+    width: 24px;
+    height: 18px;
+}
+
+.change-current-date {
+    display: flex;
+}
+
+.current-date {
+    width: 120px;
+    text-align: center;
+}
