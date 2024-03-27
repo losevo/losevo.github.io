@@ -53,15 +53,19 @@
 .another-weeks-flex {
     display: flex;
     min-height: 64px;
+    opacity: 1;
     flex-direction: row;
     gap: 20px;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px navy solid;
+    transition: all 0.5s ease-in;
 }
 
 .another-weeks-none {
-    display: none;
+    opacity: 0;
+    height: 0;
+    transform: translateY(-20px);
 
 }
 
