@@ -3,7 +3,7 @@ import { changeActivePreviousWeeks } from "../../features/slices/ratingSlices";
 import { useDispatch, useSelector } from 'react-redux';
 //todo #25 Добавить анимацию раскрывания дополнительных данных
 
-const Teams = (props) => {
+const Teams = () => {
     const teams = useSelector((state) => state.rating.ratings);
     const region = useSelector((state) => state.rating.activeRegion);
     const date = useSelector((state) => state.rating.activeDate);
