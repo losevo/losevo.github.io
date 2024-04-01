@@ -46,6 +46,12 @@
 .additional-skill {
     display: inline-block;
     margin: 0 auto;
+    transform: translateX(50vw);
+}
+
+.skills-active {
+    transition: all 0.75s linear;
+    transform: translateX(-50vw);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,5 +1,7 @@
+import { useEffect, useRef, useState } from "react";
 import "./AboutMe.css";
 import { Link } from "react-router-dom";
+import * as cn from 'classnames';
 
 const AboutMe = () => {
   const basicSkills = [
@@ -22,6 +24,21 @@ const AboutMe = () => {
     "i18next",
     "WebSockets",
   ];
+
+  const [ isActive, setIsActive ] = useState(false);
+
+  const divRef = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  },[]);
+
+  const handleScroll = () => {
+    if (divRef.current.getBoundingClientRect().bottom < 875) {
+      setIsActive(true);
+      return window.removeEventListener('scroll', handleScroll);
+    }
+  }
 
   return (
     <div className="skills-page" id="about">
@@ -50,15 +67,20 @@ const AboutMe = () => {
             </span>
           </p>
         </div>
-        <div className="skills">
+        <div className="skills" ref={divRef}>
           <h3> ЗНАЮ</h3>
-          <div className="basic-skills">
+          <div className={cn("basic-skills", {
+            'skills-active': isActive,
+          })}
+          onScroll={e => console.log('scroll')}>
             {basicSkills.map((skill, index) => (
               <span className="basic-skill" key={index}>{skill}</span>
             ))}
           </div>
           <h3>ИСПОЛЬЗУЮ</h3>
-          <div className="additional-skills">
+          <div className={cn("additional-skills", {
+            'skills-active': isActive,
+          })}>
             {additionalSkills.map((skill, index) => (
               <span className="additional-skill" key={index}>{skill}</span>
             ))}

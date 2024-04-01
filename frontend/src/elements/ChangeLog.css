@@ -1,0 +1,72 @@
+.changelog {
+    min-height: 95vh;
+    background-color: antiquewhite;
+}
+
+.changelog h3 {
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: center;
+    color: navy;
+    vertical-align: middle;
+}
+
+.changelog-head {
+    padding: 20px;
+}
+
+.changelog-body {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 95vh;
+    margin: 0 auto;
+}
+
+.changelog-one-date {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    flex-direction: column;
+    color: navy;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 6px 8px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.changelog-date {
+    width: 75vw;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.changelog-date-div {
+    display: flex;
+    justify-content: end;
+}
+
+.changelog-date, .changelog-page {
+    width: 15vw;
+}
+
+.changelog-page, .changelog-description {
+    padding: 6px 8px;
+}
+
+.changelog-pages {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.changelog-page {
+    font-weight: bold;
+    border-right: 1px  navy;
+}
+
+.changelog-description {
+    font-size: 16px;
+}
