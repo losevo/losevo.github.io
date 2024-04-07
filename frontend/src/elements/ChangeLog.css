@@ -1,11 +1,12 @@
 .changelog {
     min-height: 95vh;
-    background-color: antiquewhite;
+    background-color:aliceblue;
 }
 
 .changelog h3 {
-    font-size: 26px;
+    font-size: 30px;
     margin: 0 auto;
+    padding-top: 20px;
     text-align: center;
     color: navy;
     vertical-align: middle;

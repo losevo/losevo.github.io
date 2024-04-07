@@ -10,6 +10,8 @@
 
 .skills {
     width: 25vw;
+    transform: translateX(15vw);
+    opacity: 0;
 }
 
 .skills>h3 {
@@ -46,12 +48,12 @@
 .additional-skill {
     display: inline-block;
     margin: 0 auto;
-    transform: translateX(50vw);
 }
 
 .skills-active {
-    transition: all 0.75s linear;
-    transform: translateX(-50vw);
+    transition: all 0.5s linear;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 @media screen and (max-width: 600px) {

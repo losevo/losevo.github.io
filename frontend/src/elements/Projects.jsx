@@ -1,13 +1,34 @@
 import './Projects.css';
 import projects from '../features/projects.js';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import cn from 'classnames';
 
 const Project = (props) => {
     const { name, description, technologies, links } = props.project;
     const wordForLink = 'GitHub';
+    const divRef = useRef();
+    const [isActive, setIsActive ] = useState(false);
+
+
+    useEffect(() => {
+        const handleScrollProjects = () => {
+            console.log(divRef.current.getBoundingClientRect().bottom)
+            if (divRef.current.getBoundingClientRect().bottom < 900) {
+              setIsActive(true);
+              return window.removeEventListener('scroll', handleScrollProjects);
+            }
+            return;
+          }
+      
+          window.addEventListener('scroll', handleScrollProjects);
+    })
 
     return (
-        <div className='project'>
+        <div className={cn({
+            'project': true,
+            "project-active": isActive,
+        })} ref={divRef}>
             <div className='name-of-project'>
                 <h3>{name}</h3>
             </div>
