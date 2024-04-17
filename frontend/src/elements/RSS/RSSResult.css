@@ -1,7 +1,7 @@
 .result-rss > div {
     width: 70vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .news-list {
@@ -15,7 +15,7 @@
 .one-new {
     margin: 8px 4px;
     padding: 8px 4px;
-    width: 40vw;
+    width: 55vw;
     border-bottom: 1px navy solid;
 }
 
@@ -36,6 +36,10 @@
 
 .channels-list li {
     list-style-type: none;
+}
+
+.one-new a:hover {
+    background: none;
 }
 
 .one-new a:visited {

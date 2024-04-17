@@ -21,6 +21,7 @@
 .part-skills-and-about {
     display: flex;
     text-align: start;
+    margin-bottom: 200px;
 }
 
 .about {
@@ -54,6 +55,10 @@
     transition: all 0.5s linear;
     opacity: 1;
     transform: translateX(0);
+}
+
+.skills-page h1 {
+    margin-bottom: 200px;
 }
 
 @media screen and (max-width: 600px) {

@@ -38,6 +38,18 @@ const projects = [
       linkToProject: "rating",
     },
   },
+  {
+    name: "Вёрстка макета для тестового задания",
+    description: [
+      `Небольшая вёрстка макета с последовательным появлением элементов`,
+      `Проект задеплоил на Vercel, а код можно посмотреть на GitHub.`
+    ],
+    technologies: ["React", "HTML", "CSS", "Redux-toolkit", "grid", "JS-анимация"],
+    links: {
+      linkToGithub: 'https://github.com/losevo/test_first',
+      linkToProject: "https://test-first-flame.vercel.app/",
+    },
+  },
 ];
 
 export default projects;

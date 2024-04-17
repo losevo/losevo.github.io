@@ -2,6 +2,8 @@ import "./ChangeLog.css";
 import changelog from "../features/changelog";
 import { useEffect } from "react";
 
+//todo #29 Убрать addEventListener при переходе на другую страницу
+
 const Change = (props) => {
   const { date, changes } = props.data;
 
@@ -10,7 +12,10 @@ const Change = (props) => {
       {changes.map((change, index) => (
         <div className="changelog-pages" key={index}>
           <div className="changelog-page">{change.page}</div>
+          <div>
           <div className="changelog-description">{change.description}</div>
+          {change.link ? <div><a className='changelog-link' href={change.link}>Ссылка </a></div> : null}
+          </div>
         </div>
       ))}
       <div className="changelog-date-div">
@@ -20,8 +25,10 @@ const Change = (props) => {
   );
 };
 
+const sortCnangelog = changelog.reverse();
+
 const ChangeLog = () => {
-  const sortCnangelog = changelog.reverse();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
