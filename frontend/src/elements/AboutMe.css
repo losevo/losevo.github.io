@@ -40,9 +40,11 @@
 .additional-skills>span {
     border: 2px solid;
     border-radius: 25px;
+    border-color: #7b742c;
     margin: 0 4px 4px;
     padding: 5px 15px;
     font-size: 1.7vh;
+    color: #7b742c;
 }
 
 .basic-skill,

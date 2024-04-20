@@ -1,7 +1,7 @@
 .projects {
     min-height: 75vh;
     margin: 0 auto;
-    color: navy;
+    color: black;
     overflow: hidden;
 }
 
@@ -57,9 +57,10 @@
 
 .link-to-project a {
     font-size: 2vh;
-    font-weight: 100;
+    font-weight: 300;
     text-decoration: underline;
     background: none;
+
 }
 
 .projects-tech {
@@ -80,6 +81,7 @@
     margin: 0 4px 4px;
     border: 2px solid;
     border-radius: 25px;
+    border-color: #7b742c;
     padding: 5px 15px;
     font-size: 1.7vh;
 }

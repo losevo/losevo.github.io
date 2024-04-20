@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
-    color: navy;
+    color: black;
     vertical-align: middle;
 }
 
@@ -29,7 +29,7 @@
     width: 100%;
     min-height: 50px;
     flex-direction: column;
-    color: navy;
+    color: black;
     background-color: aliceblue;
     border-radius: 20px;
     padding: 6px 8px;
