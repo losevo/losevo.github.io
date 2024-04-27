@@ -1,6 +1,7 @@
 .changelog {
     min-height: 95vh;
     background-color:aliceblue;
+    padding-bottom: 100px;
 }
 
 .changelog h3 {
@@ -20,7 +21,7 @@
     display: flex;
     flex-direction: column;
     width: 75vw;
-    height: 95vh;
+    min-height: 95vh;
     margin: 0 auto;
 }
 

@@ -50,6 +50,18 @@ const projects = [
       linkToProject: "https://test-first-flame.vercel.app/",
     },
   },
+  {
+    name: "Карта с отображением машин",
+    description: [
+      `Карта, на которой отображены данные, полученные с сервера. Для данных отрисованы карточки, которые можно сортировать и удалять на фронтенд части.`,
+      `Проект задеплоил на Vercel, а код можно посмотреть на GitHub.`
+    ],
+    technologies: ["React", "HTML", "CSS", "Redux-toolkit", "grid", "JS-анимация"],
+    links: {
+      linkToGithub: 'https://github.com/losevo/test_glonassgps',
+      linkToProject: "https://test-glonassgps.vercel.app/",
+    },
+  },
 ];
 
 export default projects;
